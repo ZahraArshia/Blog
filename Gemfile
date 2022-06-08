@@ -52,7 +52,7 @@ gem 'bootsnap', require: false
 gem 'rubocop', '>= 1.0', '< 2.0'
 
 #Rspec
-gem 'rspec-rails'
+# gem 'rspec-rails'
 gem 'rails-controller-testing'
 
 group :development, :test do
@@ -74,6 +74,7 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'rspec-rails'
+  gem 'ffi'
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
