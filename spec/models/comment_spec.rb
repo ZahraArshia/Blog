@@ -3,8 +3,10 @@ require 'rails_helper'
 RSpec.describe Comment, type: :model do
   describe 'Validations For the Comment model' do
     before(:each) do
-      @user = User.create(name: 'Lilly', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Poland.', posts_counter: 0)
-      @post = Post.create(author: @user, title: 'Hello', text: 'This is my first post', likes_counter: 0, comments_counter: 0)
+      @user = User.create(name: 'Lilly', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Poland.',
+                          posts_counter: 0)
+      @post = Post.create(author: @user, title: 'Hello', text: 'This is my first post', likes_counter: 0,
+                          comments_counter: 0)
       @comment = Comment.new(text: 'comment1', author_id: 1, post_id: 2)
     end
 
