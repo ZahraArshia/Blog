@@ -36,6 +36,12 @@ or
 - Twitter: [@ZahraArshia](https://twitter.com/ZahraArshia)
 - LinkedIn: [@ZahraArshia](https://www.linkedin.com/in/ZahraArshia/)
 
+**David Ouma**
+
+- GitHub: [@daudi13](https://github.com/daudi13)
+- Twitter: [@davouma](https://twitter.com/davouma)
+- LinkedIn: [@davidouma](https://www.linkedin.com/in/David-Owour-Ouma/)
+
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
