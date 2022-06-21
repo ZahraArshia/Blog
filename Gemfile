@@ -55,6 +55,8 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 # gem 'rspec-rails'
 gem 'rails-controller-testing'
 
+ # Add devise
+ gem 'devise'
 # seed dump
 gem 'seed_dump', '~> 3.2', '>= 3.2.4'
 
