@@ -58,6 +58,9 @@ gem 'rails-controller-testing'
 # Add devise
 gem 'devise'
 
+# Add cancancan
+gem 'cancancan', '~> 1.9'
+
 # seed dump
 gem 'seed_dump', '~> 3.2', '>= 3.2.4'
 
