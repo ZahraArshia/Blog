@@ -74,6 +74,7 @@ GEM
     bootsnap (1.12.0)
       msgpack (~> 1.2)
     builder (3.2.4)
+    cancancan (1.17.0)
     capybara (3.37.1)
       addressable
       matrix
@@ -279,6 +280,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  cancancan (~> 1.9)
   capybara
   debug
   devise
@@ -301,7 +303,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 3.1.2p20
+   ruby 3.0.2p107
 
 BUNDLED WITH
    2.3.7
