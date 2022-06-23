@@ -2,9 +2,10 @@ require 'rails_helper'
 
 RSpec.feature 'login page', type: :feature do
   before(:each) do
-    @user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.', email: 'tom@gmail.com', password: '123456')
+    @user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.',
+                        email: 'tom@gmail.com', password: '123456')
   end
-  
+
   background { visit new_user_session_path }
   scenario 'displays form fields' do
     expect(page).to have_field('user_email')
@@ -15,7 +16,7 @@ RSpec.feature 'login page', type: :feature do
   describe 'Login info' do
     it 'should not login with blank credentials' do
       click_button 'Log in'
-      expect(page).to have_content "Invalid Email or password."
+      expect(page).to have_content 'Invalid Email or password.'
     end
 
     it 'should not login with invalid credentials' do
@@ -23,7 +24,7 @@ RSpec.feature 'login page', type: :feature do
       fill_in 'Email', with: 'test@email.com'
       fill_in 'Password', with: '???'
       click_button 'Log in'
-      expect(page).to have_content "Invalid Email or password."
+      expect(page).to have_content 'Invalid Email or password.'
     end
 
     it 'should login with valid credentials' do

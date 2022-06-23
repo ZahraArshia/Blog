@@ -2,18 +2,19 @@ require 'rails_helper'
 
 RSpec.describe 'Post', type: :feature do
   before(:each) do
-    @first_user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.', email: 'tom@gmail.com', password: '123456')
+    @first_user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
+                              bio: 'Teacher from Mexico.', email: 'tom@gmail.com', password: '123456')
 
-    @post1 = Post.create(author: @first_user, title: "Hello", text: "This is my first post")
-    @post2 = Post.create(author: @first_user, title: "Hello", text: "This is my second post")
-    @post3 = Post.create(author: @first_user, title: "Hello", text: "This is my 3rd post")
-    @post3 = Post.create(author: @first_user, title: "Hello", text: "This is my 4th post")
-    @post4 = Post.create(author: @first_user, title: "Hello", text: "This is my 5th post")
+    @post1 = Post.create(author: @first_user, title: 'Hello', text: 'This is my first post')
+    @post2 = Post.create(author: @first_user, title: 'Hello', text: 'This is my second post')
+    @post3 = Post.create(author: @first_user, title: 'Hello', text: 'This is my 3rd post')
+    @post3 = Post.create(author: @first_user, title: 'Hello', text: 'This is my 4th post')
+    @post4 = Post.create(author: @first_user, title: 'Hello', text: 'This is my 5th post')
 
     5.times do |num|
       @comment = Comment.create(post: @post1, author: @first_user, text: "comment#{num}")
     end
-    
+
     Like.create(author: @first_user, post: @post1)
 
     visit new_user_session_path
@@ -24,9 +25,8 @@ RSpec.describe 'Post', type: :feature do
   end
 
   describe 'post index page' do
-    
     it "Shows the user's photo" do
-      expect(page).to have_css(".user-image")
+      expect(page).to have_css('.user-image')
     end
 
     it 'Shows the username' do

@@ -93,10 +93,10 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'capybara'
+  # gem 'capybara'
   gem 'ffi'
-  gem 'rspec-rails'
+  # gem 'rspec-rails'
   gem 'selenium-webdriver'
-  gem 'selenium-webdriver'
-  gem 'webdrivers'
+  # gem 'selenium-webdriver'
+  # gem 'webdrivers'
 end
