@@ -27,6 +27,31 @@ or
 
 `ruby bin\rails server` (recomended if you are using windows OS)
 
+## Tests
+Diffult (run all spec files):
+
+`bundle exec rspec`
+
+Run all spec files in the `Spec` folder:
+
+`bundle exec rspec spec`
+
+Run all spec files in a single directory:
+
+`bundle exec rspec spec/models`
+
+Run a single spec file:
+
+`bundle exec rspec spec/views/login_page_spec.rb`
+
+Run a single example from a spec file(by line number):
+
+`bundle exec rspec spec/controllers/users_controller_spec.rb:8`
+
+See all options for running specs:
+
+`bundle exec rspec --help`
+
 
 ## Author
 
