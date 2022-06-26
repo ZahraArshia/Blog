@@ -34,7 +34,7 @@ gem 'jbuilder'
 # gem "kredis"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
-# gem "bcrypt", "~> 3.1.7"
+gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data'
@@ -63,6 +63,11 @@ gem 'cancancan', '~> 1.9'
 
 # seed dump
 gem 'seed_dump', '~> 3.2', '>= 3.2.4'
+
+gem 'devise-jwt'
+gem 'dotenv-rails'
+gem 'jwt'
+gem 'rack-cors'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -94,8 +99,6 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'ffi'
-  # gem 'rspec-rails'
   gem 'selenium-webdriver'
-  # gem 'selenium-webdriver'
   # gem 'webdrivers'
 end
